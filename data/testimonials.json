@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Parent",
+    "role": "parent",
+    "quote": "Bright Public School provides a nurturing environment where children grow academically and personally. We are proud to be part of this educational community."
+  },
+  {
+    "id": 2,
+    "name": "Parent",
+    "role": "parent",
+    "quote": "The teachers are supportive, professional, and genuinely committed to student success. Our child enjoys learning every day."
+  },
+  {
+    "id": 3,
+    "name": "Student",
+    "role": "student",
+    "quote": "The school encourages creativity, teamwork, and confidence. I have learned valuable skills both inside and outside the classroom."
+  },
+  {
+    "id": 4,
+    "name": "Student",
+    "role": "student",
+    "quote": "Bright Public School has helped me develop academically while participating in many extracurricular activities and events."
+  }
+]

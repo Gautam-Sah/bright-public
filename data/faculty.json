@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "Faculty Member",
+    "designation": "Teacher",
+    "department": "General",
+    "photo": "assets/teachers/teacher 1.jpg",
+    "bio": ""
+  }
+]

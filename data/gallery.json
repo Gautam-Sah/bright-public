@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "src": "assets/gallery/gallery (1).jpg",
+    "alt": "Gallery Image 1",
+    "category": "campus"
+  },
+  {
+    "id": 2,
+    "src": "assets/gallery/gallery (2).jpg",
+    "alt": "Gallery Image 2",
+    "category": "campus"
+  },
+  {
+    "id": 3,
+    "src": "assets/gallery/gallery (3).jpg",
+    "alt": "Gallery Image 3",
+    "category": "campus"
+  }
+]
