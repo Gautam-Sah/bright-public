@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Bright Public School, Birgunj</title>
+  <meta name="description" content="Browse photos of Bright Public School's campus, modern classrooms, events, sports, and student activities. See our vibrant school life in Birgunj.">
+  <link rel="icon" href="../assets/logo/logo.png" type="image/png">
+
+  <!-- CSS Architecture -->
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/pages.css">
+  <link rel="stylesheet" href="../styles/utilities.css">
+  <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body>
+  <bps-navbar></bps-navbar>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container page-header__content">
+      <h1 class="page-header__title font-display">Photo Gallery</h1>
+      <div class="page-header__breadcrumbs">
+        <a href="../index.html">Home</a> &nbsp;▸&nbsp; Gallery
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- GALLERY FILTERS & GRID SECTION -->
+    <section class="section section--white reveal">
+      <div class="container">
+        
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Photos</button>
+          <button class="filter-btn" data-filter="campus">Campus</button>
+          <button class="filter-btn" data-filter="classrooms">Classrooms</button>
+          <button class="filter-btn" data-filter="sports">Sports</button>
+          <button class="filter-btn" data-filter="events">Events &amp; Life</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Item 1: Campus -->
+          <div class="gallery-item" data-category="campus">
+            <img src="../assets/campus/campus (1).png" alt="Bright Public School Front View">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 2: Classroom -->
+          <div class="gallery-item" data-category="classrooms">
+            <img src="../assets/classrooms/classroom 2.jpg" alt="Interactive Classroom Discussion">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 3: Sports -->
+          <div class="gallery-item" data-category="sports">
+            <img src="../assets/sports/sports (1).png" alt="Annual Football Matches">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 4: Events -->
+          <div class="gallery-item" data-category="events">
+            <img src="../assets/events/events (1).jpg" alt="School Science Exhibition">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 5: Campus -->
+          <div class="gallery-item" data-category="campus">
+            <img src="../assets/campus/campus (2).png" alt="BPS Building Side Angle">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 6: Classroom -->
+          <div class="gallery-item" data-category="classrooms">
+            <img src="../assets/classrooms/classroom 2.jpg" alt="Computer Laboratory Sessions">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 7: Sports -->
+          <div class="gallery-item" data-category="sports">
+            <img src="../assets/sports/sports (2).jpg" alt="Basketball Training Court">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 8: Events -->
+          <div class="gallery-item" data-category="events">
+            <img src="../assets/events/events (2).jpg" alt="Cultural Dance Performance">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 9: Classrooms -->
+          <div class="gallery-item" data-category="classrooms">
+            <img src="../assets/classrooms/classroom 3.png" alt="Student Reading in Library">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+
+          <!-- HIDDEN GALLERY ITEMS (Shown via View More) -->
+          <!-- Item 10: Campus (Hidden) -->
+          <div class="gallery-item hidden-gallery-item" data-category="campus" style="display: none;">
+            <img src="../assets/campus/campus (3).png" alt="Main Assembly Ground">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 11: Classrooms (Hidden) -->
+          <div class="gallery-item hidden-gallery-item" data-category="classrooms" style="display: none;">
+            <img src="../assets/classrooms/classroom 4.png" alt="Chemistry Lab Instruments">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 12: Sports (Hidden) -->
+          <div class="gallery-item hidden-gallery-item" data-category="sports" style="display: none;">
+            <img src="../assets/sports/sports (3).jpg" alt="Table Tennis Matches">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 13: Events (Hidden) -->
+          <div class="gallery-item hidden-gallery-item" data-category="events" style="display: none;">
+            <img src="../assets/events/events (3).jpg" alt="Parents Day Celebration">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <!-- Item 14: Events (Hidden) -->
+          <div class="gallery-item hidden-gallery-item" data-category="events" style="display: none;">
+            <img src="../assets/events/events (4).jpg" alt="Student Art Showcase Exhibition">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- View More Trigger Button -->
+        <div class="text-center mt-12">
+          <button class="btn btn-navy" id="show-more-btn">View More</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <bps-footer></bps-footer>
+
+  <!-- JS Architecture -->
+  <script src="../scripts/components.js"></script>
+  <script src="../scripts/utils.js"></script>
+  <script src="../scripts/navbar.js"></script>
+  <script src="../scripts/gallery.js"></script>
+  <script src="../scripts/animations.js"></script>
+  <script src="../scripts/lazyload.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

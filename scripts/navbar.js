@@ -56,14 +56,16 @@ function initNavbar() {
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   $$('.navbar__link').forEach(function (link) {
     const href = link.getAttribute('href');
-    if (href === currentPage) {
+    const linkPage = (href || '').split('#')[0].split('/').pop();
+
+    if (linkPage === currentPage) {
       link.classList.add('active');
     }
   });
 
   $$('.mobile-bottom-nav__link').forEach(function (link) {
     const href = link.getAttribute('href') || '';
-    const linkPage = href.split('#')[0];
+    const linkPage = href.split('#')[0].split('/').pop();
     link.classList.toggle('active', linkPage === currentPage);
   });
 }

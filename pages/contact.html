@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Bright Public School, Birgunj</title>
+  <meta name="description" content="Get in touch with Bright Public School in Birgunj, Nepal. Find our phone numbers, email, location near the C.D.O. Office, and send an inquiry.">
+  <link rel="icon" href="../assets/logo/logo.png" type="image/png">
+
+  <!-- CSS Architecture -->
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/pages.css">
+  <link rel="stylesheet" href="../styles/utilities.css">
+  <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body>
+  <bps-navbar></bps-navbar>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container page-header__content">
+      <h1 class="page-header__title font-display">Contact Us</h1>
+      <div class="page-header__breadcrumbs">
+        <a href="../index.html">Home</a> &nbsp;▸&nbsp; Contact
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- CONTACT INFO & FORM SECTION -->
+    <section class="section section--white reveal">
+      <div class="container contact-grid">
+        
+        <!-- Contact Details Card -->
+        <div class="contact-info-card">
+          <h3 class="font-display">Get In Touch</h3>
+          <p class="mb-8" style="color: rgba(255,255,255,0.7); font-size: var(--text-sm); line-height: var(--leading-relaxed);">Have questions about our programs, curriculum, or admission registration? Our support team is ready to assist you. Call or visit our campus office.</p>
+          
+          <div class="contact-info-list">
+            <!-- Address -->
+            <div class="contact-info-item">
+              <span class="icon">📍</span>
+              <div>
+                <h4>Our Location</h4>
+                <p>Ghantaghar-9, Birgunj, Parsa,<br>Madhesh Province, Nepal<br><span style="font-size: var(--text-xs); opacity: 0.8;">(Near the C.D.O. Office)</span></p>
+              </div>
+            </div>
+            <!-- Phones -->
+            <div class="contact-info-item">
+              <span class="icon">📞</span>
+              <div>
+                <h4>Call Office</h4>
+                <p>
+                  <a href="tel:051528008">051-528008</a> &nbsp;|&nbsp; 
+                  <a href="tel:9802593401">9802593401</a><br>
+                  <a href="tel:9802593403">9802593403</a> &nbsp;|&nbsp; 
+                  <a href="tel:9855026252">9855026252</a>
+                </p>
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="contact-info-item">
+              <span class="icon">✉️</span>
+              <div>
+                <h4>Send Email</h4>
+                <p><a href="mailto:brighteducation2080@gmail.com">brighteducation2080@gmail.com</a></p>
+              </div>
+            </div>
+            <!-- Hours -->
+            <div class="contact-info-item">
+              <span class="icon">🕒</span>
+              <div>
+                <h4>Office Hours</h4>
+                <p>Sunday - Friday<br>9:00 AM - 4:30 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inquiry Form -->
+        <div class="form-card">
+          <h3 class="text-navy font-display text-2xl font-bold mb-6">Send Us a Message</h3>
+          <form action="#" method="POST" id="contactForm" onsubmit="event.preventDefault(); alert('Thank you for contacting Bright Public School. We will review your message and reply as soon as possible.'); this.reset();">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Full Name</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactPhone" class="form-label">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="98XXXXXXXX" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="you@email.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" id="contactSubject" class="form-control" placeholder="General Inquiry, Feedback, etc." required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Your Message</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Write details of your query..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-navy w-full text-center flex--center">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GOOGLE MAPS SECTION -->
+    <section class="section section--surface reveal" style="padding-top: 0;">
+      <div class="container">
+        <div class="map-container">
+          <!-- Lazy loaded iframe via data-src -->
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1031.0664975765955!2d84.877375!3d27.0151743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399355000f081c33%3A0x69c05bcd783a4fba!2sBright+Public+School!5e0!3m2!1sen!2snp!4v1719572456789!5m2!1sen!2snp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <bps-footer></bps-footer>
+
+  <!-- JS Architecture -->
+  <script src="../scripts/components.js"></script>
+  <script src="../scripts/utils.js"></script>
+  <script src="../scripts/navbar.js"></script>
+  <script src="../scripts/animations.js"></script>
+  <script src="../scripts/lazyload.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

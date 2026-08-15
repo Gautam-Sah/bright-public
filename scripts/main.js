@@ -4,17 +4,22 @@
    Initializes all modules after DOM is ready.
 
    Script loading order in HTML:
-   1. utils.js       — shared helpers ($, $$, on, debounce, throttle, etc.)
-   2. navbar.js      — sticky nav & mobile menu
-   3. slider.js      — homepage hero slider
-   4. gallery.js     — gallery lightbox & show more
-   5. counter.js     — animated statistics
-   6. animations.js  — scroll reveal (IntersectionObserver)
-   7. lazyload.js    — lazy loading images & iframes
-   8. main.js        — this file (initializer)
+   1. components.js  — shared navbar/footer components
+   2. utils.js       — shared helpers ($, $$, on, debounce, throttle, etc.)
+   3. navbar.js      — sticky nav & mobile menu
+   4. slider.js      — homepage hero slider
+   5. gallery.js     — gallery lightbox & show more
+   6. counter.js     — animated statistics
+   7. animations.js  — scroll reveal (IntersectionObserver)
+   8. lazyload.js    — lazy loading images & iframes
+   9. main.js        — this file (initializer)
    ========================================================================== */
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
+  if (Array.isArray(window.bpsComponentPromises)) {
+    await Promise.allSettled(window.bpsComponentPromises);
+  }
+
   // Core — always initialize
   if (typeof initNavbar === 'function')       initNavbar();
   if (typeof initScrollReveal === 'function') initScrollReveal();
