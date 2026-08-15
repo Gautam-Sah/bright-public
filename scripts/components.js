@@ -129,22 +129,33 @@ class BpsFooter extends HTMLElement {
                 Nepal.
               </p>
               <div class="footer__social">
-                <a href="https://facebook.com/p/Bright-Public-School-61556083547734" target="_blank" class="footer__social-link" aria-label="Facebook">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                <a href="https://facebook.com/p/Bright-Public-School-61556083547734" target="_blank" rel="noopener noreferrer" class="footer__social-link footer__social-link--facebook" aria-label="Facebook">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="6" fill="#1877F2"/>
+                    <path d="M15.5 12H13.2V20H10V12H8.5V9.3H10V7.5C10 5.8 11 4.5 13.2 4.5C14.1 4.5 14.9 4.6 15.3 4.7V7.1H14.1C13.2 7.1 13 7.6 13 8.3V9.3H15.6L15.5 12Z" fill="white"/>
                   </svg>
                 </a>
-                <a href="https://www.instagram.com/bright__college/" target="_blank" class="footer__social-link" aria-label="Instagram">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                    <circle cx="12" cy="12" r="4"/>
-                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                <a href="https://www.instagram.com/bright__college/" target="_blank" rel="noopener noreferrer" class="footer__social-link footer__social-link--instagram" aria-label="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <defs>
+                      <linearGradient id="bps-ig-grad-fallback" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#FFDC80"/>
+                        <stop offset="25%" stop-color="#F77737"/>
+                        <stop offset="50%" stop-color="#F56040"/>
+                        <stop offset="75%" stop-color="#FD1D1D"/>
+                        <stop offset="100%" stop-color="#833AB4"/>
+                      </linearGradient>
+                    </defs>
+                    <rect width="24" height="24" rx="6" fill="url(#bps-ig-grad-fallback)"/>
+                    <path d="M12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12C17 9.24 14.76 7 12 7ZM12 15.2C10.23 15.2 8.8 13.77 8.8 12C8.8 10.23 10.23 8.8 12 8.8C13.77 8.8 15.2 10.23 15.2 12C15.2 13.77 13.77 15.2 12 15.2Z" fill="white"/>
+                    <circle cx="16.5" cy="7.5" r="1.1" fill="white"/>
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="white" stroke-width="1.6" fill="none"/>
                   </svg>
                 </a>
-                <a href="https://www.youtube.com/watch?v=qFYU1nmPurM" target="_blank" class="footer__social-link" aria-label="YouTube">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
-                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/>
+                <a href="https://www.youtube.com/watch?v=qFYU1nmPurM" target="_blank" rel="noopener noreferrer" class="footer__social-link footer__social-link--youtube" aria-label="YouTube">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="6" fill="#FF0000"/>
+                    <path d="M10 8.5L16 12L10 15.5V8.5Z" fill="white"/>
                   </svg>
                 </a>
               </div>
